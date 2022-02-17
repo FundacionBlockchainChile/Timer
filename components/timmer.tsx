@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import moment from 'moment'
 
-export default function Timmer() {
+export default function Timer() {
   const [date, setDate]: [date: any, setDate: any] = useState(undefined)
 
   useEffect(() => {
@@ -15,5 +15,5 @@ export default function Timmer() {
     setDate(datetime.format('dddd, MMMM Do YYYY, h:mm:ss a'))
   }
 
-  return <h1 className={styles.title}>{date}</h1>
+  return <h2 className={styles.title}>{date}</h2>
 }
